@@ -4,7 +4,7 @@ export class ContentList {
 
     private _contentArray: IContent[];
 
-    constructor(_array: IContent){
+    constructor(_array: IContent[]){
         this._contentArray = [];
     }
 
