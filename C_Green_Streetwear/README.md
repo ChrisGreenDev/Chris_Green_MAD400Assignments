@@ -1,27 +1,3 @@
-# CGreenStreetwear
+# Chris Green
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Streetwear is a style of casual clothing that emerged from the youth culture of the 1970s and 1980s in Los Angeles and New York City. The style is characterized by comfortable, functional clothing made from casual fabrics such as denim, corduroy, and cotton, and features bold graphics, bright colors, and oversized silhouettes. Streetwear is heavily influenced by the counterculture of the time, including punk, hip-hop, and skate culture. Brands like Supreme, Stussy, and Nike have become synonymous with streetwear, and the style has been adopted by fashion designers and high-end fashion brands. Streetwear has evolved to encompass a wide range of styles and subcultures, and has become a global phenomenon, with streetwear communities and events popping up all over the world.
