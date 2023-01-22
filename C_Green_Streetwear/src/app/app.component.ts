@@ -14,17 +14,17 @@ export class AppComponent {
   constructor(){
   this.contentList = new ContentList([]);
 
-  let contentCoat: IContent = {id: 1,title: "Supreme Coat", author: "Chris Green", description: "This supreme coat is the supreme red with the brand name on the back.", 
-  imgSrc: "https://www.google.com/search?q=supreme+streetwear&client=firefox-b-d&sxsrf=AJOqlzUXSMvu5zgnq6N5YW7O9I0HFkbr0g:1674271255414&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpyr672tf8AhWgnokEHRuzCWQQ_AUoAnoECAEQBA&biw=1440&bih=787&dpr=2#imgrc=UnvemlLXZ-y42M", type: "Coat"};
+  let contentCoat: IContent = {id: 1,title: "Supreme x North Face Jacket", author: "Supreme x Northface", description: "This supreme coat is the supreme red with the brand name on the back.", 
+  imgSrc: "assets/images/snj.jpg", type: "Winter Collection 2015"};
 
-  let contentBag: IContent = {id: 1,title: "Supreme Bag", author: "Chris Green", description: "Example Description", 
-  imgSrc: "https://www.google.com/search?q=supreme+streetwear&client=firefox-b-d&sxsrf=AJOqlzUXSMvu5zgnq6N5YW7O9I0HFkbr0g:1674271255414&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpyr672tf8AhWgnokEHRuzCWQQ_AUoAnoECAEQBA&biw=1440&bih=787&dpr=2#imgrc=UnvemlLXZ-y42M", type: "Bag"};
+  let contentBag: IContent = {id: 1,title: "Supreme x North Face Bag", author: "Supreme", description: "A collaboration between Supreme and North Face. This bag was a once only drop. ", 
+  imgSrc: "assets/images/bag.jpg", type: "Summer Collection 2011"};
 
-  let contentHat: IContent = {id: 1,title: "Supreme Hat", author: "Chris Green", description: "Example Description", 
-  imgSrc: "https://www.google.com/search?q=supreme+streetwear&client=firefox-b-d&sxsrf=AJOqlzUXSMvu5zgnq6N5YW7O9I0HFkbr0g:1674271255414&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpyr672tf8AhWgnokEHRuzCWQQ_AUoAnoECAEQBA&biw=1440&bih=787&dpr=2#imgrc=UnvemlLXZ-y42M", type: "Hat"};
+  let contentHat: IContent = {id: 1,title: "Supreme x Lacoste Hat", author: "Supreme", description: "A collaboration between Supreme and Lacoste. These two brands come together to bring a new spin on the 'dad' hat.", 
+  imgSrc: "assets/images/hat.jpg", type: "Summer Collection 2012"};
 
-  let contentSkateBoard: IContent = {id: 1,title: "Supreme Skate Board", author: "Chris Green", description: "Example Description", 
-  imgSrc: "https://www.google.com/search?q=supreme+streetwear&client=firefox-b-d&sxsrf=AJOqlzUXSMvu5zgnq6N5YW7O9I0HFkbr0g:1674271255414&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjpyr672tf8AhWgnokEHRuzCWQQ_AUoAnoECAEQBA&biw=1440&bih=787&dpr=2#imgrc=UnvemlLXZ-y42M", type: "SkateBoard"};
+  let contentSkateBoard: IContent = {id: 1,title: "Supreme x Kaws Skate Board", author: "Supreme", description: "Kaws is known for their figurines and crazy style. This skateboard is a collaboration between Supreme and Kaws. ", 
+  imgSrc: "assets/images/skateboard.jpg", type: "Spring Collection 2020"};
 
   this.contentList.addContent(contentCoat);
   this.contentList.addContent(contentBag);

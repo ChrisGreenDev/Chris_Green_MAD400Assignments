@@ -29,9 +29,9 @@ export class ContentList {
         <div class="content-item">
             <h2 class="title">${content.title}</h2>
             <div class="description">${content.description}</div>
-            <div class="author">by ${content.author}</div>
+            <div class="author">Designer: ${content.author}</div>
             <img src="${content.imgSrc}" class="content-img">
-            <div class"contentType">${content.type}</div>
+            <div class"contentType">Collection: ${content.type}</div>
         </div>
         `;
         return htmlOutPut;
