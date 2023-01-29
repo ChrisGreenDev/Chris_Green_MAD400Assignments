@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ContentList } from './models/content-list';
+// import { ContentList } from './models/content-list';
 import { IContent } from './models/icontent';
 
 @Component({
@@ -9,10 +9,8 @@ import { IContent } from './models/icontent';
 })
 export class AppComponent {
   title = 'C_Green_Streetwear';
-  contentList: ContentList;
 
   constructor(){
-  this.contentList = new ContentList([]);
 
   let contentCoat: IContent = {id: 1,title: "Supreme x North Face Jacket", author: "Supreme x Northface", description: "This supreme coat is the supreme red with the brand name on the back.", 
   imgSrc: "assets/images/snj.jpg", type: "Winter Collection 2015"};
@@ -25,11 +23,6 @@ export class AppComponent {
 
   let contentSkateBoard: IContent = {id: 1,title: "Supreme x Kaws Skate Board", author: "Supreme", description: "Kaws is known for their figurines and crazy style. This skateboard is a collaboration between Supreme and Kaws. ", 
   imgSrc: "assets/images/skateboard.jpg", type: "Spring Collection 2020"};
-
-  this.contentList.addContent(contentCoat);
-  this.contentList.addContent(contentBag);
-  this.contentList.addContent(contentHat);
-  this.contentList.addContent(contentSkateBoard);
 
   }
 }
