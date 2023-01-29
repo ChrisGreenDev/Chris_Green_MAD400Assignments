@@ -1,1 +1,7 @@
-<p>content-list-item works!</p>
+<div style="border: 2px solid;">
+    <h2 *ngIf="content">{{content.title}}</h2>
+    <img *ngIf="content" [src]="content.imgSrc"(click)="showDetails(content)"/>
+    <p *ngIf="content"><strong>Description: </strong>{{content.description}}</p>
+    <p *ngIf="content"><strong>Author: </strong>{{content.author}}</p>
+    <p *ngIf="content"><strong>Type: </strong>{{content.type}}</p>
+</div>

@@ -8,4 +8,10 @@ import { IContent } from '../models/icontent';
 })
 export class ContentListItemComponent {
   @Input() content?: IContent;
+
+  //When an Image is clicked this will console log the id and description of the item
+  showDetails(content: IContent){
+    console.log(`ID: ${content.id}`);
+    console.log(`Description: ${content.description}`);
+  }
 }
