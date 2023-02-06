@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IContent } from '../models/icontent'
+import { StreetwearService } from '../services/streetwear.service';
 
 @Component({
   selector: 'app-content-list',
@@ -9,8 +10,14 @@ import { IContent } from '../models/icontent'
 export class ContentListComponent {
   contentItems: IContent[];
 
-  constructor(){
+  constructor(private streetwearService: StreetwearService){
     this.contentItems = [];
+  }
+
+  ngOnInit(): void {
+    this.streetwearService.getContent().subscribe((IcontentArrayOfData: IContent[]) =>{
+      this.contentItems = IcontentArrayOfData;
+    });
   }
   
 }
