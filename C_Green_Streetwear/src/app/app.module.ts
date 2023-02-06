@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ContentListItemComponent } from './content-list-item/content-list-item.component';
 
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,6 +14,7 @@ import { ContentListItemComponent } from './content-list-item/content-list-item.
     ContentListItemComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule
   ],
   providers: [],

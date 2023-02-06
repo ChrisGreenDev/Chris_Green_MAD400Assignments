@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { Observable, of, throwError } from 'rxjs';
 import { CONTENT } from '../data/mock-content';
 import { IContent } from '../models/icontent';
 
@@ -55,5 +55,40 @@ export class StreetwearService {
         return of(undefined);
     }
 }
+
+// getContentById(id: number): Observable<IContent> {
+//   const content = CONTENT.find(c => c.id === id);
+//   return content ? of(content) : of({id: 0, title: '', author: '', description: '', imgSrc: '', type: ''});
+// }
+
+// addContent(content: IContent): Observable<IContent[]> {
+//   if (CONTENT.find(c => c.id === content.id)) {
+//     return throwError('Content already exists with id ' + content.id);
+//   } else {
+//     CONTENT.push(content);
+//     return of(CONTENT);
+//   }
+// }
+
+// updateContent(content: IContent): Observable<IContent[]> {
+//   const index = CONTENT.findIndex(c => c.id === content.id);
+//   if (index === -1) {
+//     return of([{ id: 0, title: '', author: '', description: '', imgSrc: '', type: '' }]);
+//   } else {
+//     const updatedContent = { ...CONTENT[index], ...content };
+//     CONTENT[index] = updatedContent;
+//     return of(CONTENT);
+//   }
+// }
+
+// deleteContent(id: number): Observable<IContent[]> {
+//   const index = CONTENT.findIndex(c => c.id === id);
+//   if (index === -1) {
+//     return throwError('Content does not exist with id ' + id);
+//   } else {
+//     CONTENT.splice(index, 1);
+//     return of(CONTENT);
+//   }
+// }
 
 }
