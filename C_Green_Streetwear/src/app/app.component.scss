@@ -1,12 +1,3 @@
-// .content-card {
-//     border: 1px solid #ccc;
-//     padding: 8px;
-//     margin-bottom: 20px;
-//     box-shadow: 2px 2px 2px #ccc;
-//     text-align: center;
-// }
-
-
 .card-grid {
     display: flex;
     flex-wrap: wrap;
@@ -34,29 +25,6 @@
     object-fit: cover;
   }
   
-//   .card .card-content {
-//     padding: 20px;
-//     width: 100%;
-//   }
-  
-//   .card .card-content .title {
-//     font-size: 24px;
-//     font-weight: 600;
-//     margin-bottom: 10px;
-//   }
-  
-//   .card .card-content .author {
-//     font-size: 18px;
-//     color: #777;
-//     margin-bottom: 10px;
-//   }
-  
-//   .card .card-content .description {
-//     font-size: 16px;
-//     color: #555;
-//     line-height: 1.5;
-//   }
-  
   .card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 20px 40px #ccc;
@@ -65,3 +33,7 @@
   .hero h1{
     text-align: center;
   }
+
+  .highlight {
+    box-shadow: 3px 3px 5px 6px rgb(0, 255, 47);
+}
