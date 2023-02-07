@@ -11,12 +11,12 @@ import { StreetwearService } from './services/streetwear.service';
 export class AppComponent {
   title = 'C_Green_Streetwear';
 
-  selectedId: number;
+  // selectedId: number;
   content: IContent[] = [];
   selectedContent: IContent;
 
   constructor(private streetwearService: StreetwearService){
-    this.selectedId = 0;
+    // this.selectedId = 0;
     this.selectedContent = {id: 0, title: '', author: '', description: '', imgSrc: '', type: ''};  }
 
   ngOnInit(): void {
@@ -39,5 +39,5 @@ export class AppComponent {
   //   });
   // }
 
-  
+
 }
