@@ -8,13 +8,15 @@ import { ContentListItemComponent } from './content-list-item/content-list-item.
 import { FormsModule } from '@angular/forms';
 import { ContentItemDetailComponent } from './content-item-detail/content-item-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ContentSearchComponent } from './content-search/content-search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentListComponent,
     ContentListItemComponent,
-    ContentItemDetailComponent
+    ContentItemDetailComponent,
+    ContentSearchComponent
   ],
   imports: [
     FormsModule,
