@@ -7,6 +7,7 @@ import { ContentListItemComponent } from './content-list-item/content-list-item.
 
 import { FormsModule } from '@angular/forms';
 import { ContentItemDetailComponent } from './content-item-detail/content-item-detail.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ContentItemDetailComponent } from './content-item-detail/content-item-d
   ],
   imports: [
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
