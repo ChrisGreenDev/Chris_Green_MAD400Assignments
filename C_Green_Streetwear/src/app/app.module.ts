@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ContentItemDetailComponent } from './content-item-detail/content-item-detail.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ContentSearchComponent } from './content-search/content-search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContentSearchComponent } from './content-search/content-search.componen
     ContentListComponent,
     ContentListItemComponent,
     ContentItemDetailComponent,
-    ContentSearchComponent
+    ContentSearchComponent,
+    PageNotFoundComponent
   ],
   imports: [
     FormsModule,

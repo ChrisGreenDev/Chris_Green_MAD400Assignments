@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ContentListComponent } from './content-list/content-list.component';
 import { ContentItemDetailComponent } from './content-item-detail/content-item-detail.component';
 import { ContentSearchComponent } from './content-search/content-search.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [{
@@ -26,6 +27,10 @@ const routes: Routes = [{
 {
   path: "detail",
   component: ContentItemDetailComponent
+},
+{
+  path: "**",
+  component: PageNotFoundComponent
 }]
 
 @NgModule({
