@@ -1,4 +1,4 @@
-<div style="border: 2px solid;">
+<!-- <div style="border: 2px solid;">
     <h2 *ngIf="content">{{content.title}}</h2>
     <img *ngIf="content" [src]="content.imgSrc"(click)="showDetails(content)"/>
     <div class="pBlock">
@@ -6,5 +6,12 @@
         <p *ngIf="content"><strong>Author: </strong>{{content.author}}</p>
         <p *ngIf="content"><strong>Type: </strong>{{content.type}}</p>
     </div>
+</div> -->
+
+
+<div style="border: 2px solid;">
+    <a *ngIf="content" [routerLink]="['/content', content.id+'']">{{content.title}}</a>
+    <img *ngIf="content" [src]="content.imgSrc"/>
+    <p *ngIf="content"><strong>Type: </strong>{{content.type}}</p>
 </div>
 

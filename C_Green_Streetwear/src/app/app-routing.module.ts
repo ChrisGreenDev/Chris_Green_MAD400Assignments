@@ -22,6 +22,10 @@ const routes: Routes = [{
 {
   path: "search",
   component: ContentSearchComponent
+},
+{
+  path: "detail",
+  component: ContentItemDetailComponent
 }]
 
 @NgModule({
