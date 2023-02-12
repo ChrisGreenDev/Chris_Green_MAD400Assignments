@@ -1,1 +1,20 @@
-<p>content-search works!</p>
+<div>
+    <input type="number" [(ngModel)]="searchId">
+    <button (click)="search()">Search</button>
+</div>
+
+<div *ngIf="foundContent">
+    <h2>{{foundContent.title}}</h2>
+    <p>{{foundContent.author}}</p>
+    <p>{{foundContent.description}}</p>
+    <img [src]="foundContent.imgSrc"/>
+    <p>{{foundContent.type}}</p>
+  </div>
+  <div *ngIf="!foundContent">
+    <p>Error: Content not found</p>
+  </div>
+
+  
+  
+  
+  

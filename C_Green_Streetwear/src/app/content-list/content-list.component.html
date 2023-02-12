@@ -1,7 +1,3 @@
-<!-- <div *ngFor="let item of contentItems">
-    <app-content-list-item [content]="item"></app-content-list-item>
-</div> -->
-
 <div *ngFor="let item of contentItems; index as i" [ngClass]="{
     'even': i % 2 === 0,
     'odd': i % 2 !== 0

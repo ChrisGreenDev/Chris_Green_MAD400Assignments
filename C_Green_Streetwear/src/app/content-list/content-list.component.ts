@@ -9,9 +9,13 @@ import { StreetwearService } from '../services/streetwear.service';
 })
 export class ContentListComponent {
   contentItems: IContent[];
+  // searchId: number;
+  // foundContent: IContent;
 
   constructor(private streetwearService: StreetwearService){
     this.contentItems = [];
+    // this.searchId = 0;
+    // this.foundContent = { id: 0, title: '', author: '', description: '', imgSrc: '', type: '' };
   }
 
   ngOnInit(): void {
@@ -19,6 +23,12 @@ export class ContentListComponent {
       this.contentItems = IcontentArrayOfData;
     });
   }
-  
+
+  // search() {
+  //   this.streetwearService.getContentById(this.searchId).subscribe(contents => {
+  //     this.foundContent = contents.filter(content => content.id === this.searchId)[0];
+  //   });
+  // }
+
 }
 

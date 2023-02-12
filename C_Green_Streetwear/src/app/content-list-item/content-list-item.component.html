@@ -1,4 +1,3 @@
-<!-- BONUS Used *ngIf to check if there is content and not null or undefined. If there is no content then it will display nothing -->
 <div style="border: 2px solid;">
     <h2 *ngIf="content">{{content.title}}</h2>
     <img *ngIf="content" [src]="content.imgSrc"(click)="showDetails(content)"/>
