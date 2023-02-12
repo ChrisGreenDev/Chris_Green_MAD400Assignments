@@ -1,13 +1,12 @@
-<p>content-item-detail works!</p>
-
-<a [routerLink]="['/']">Back to Content List</a>
 <div *ngIf="content">
   <h2>{{content.title}}</h2>
   <p>{{content.author}}</p>
   <p>{{content.description}}</p>
   <img [src]="content.imgSrc"/>
   <p>{{content.type}}</p>
+  <a [routerLink]="['/']">Back to Content List</a>
 </div>
 <div *ngIf="!content">
   <p>No content found.</p>
 </div>
+

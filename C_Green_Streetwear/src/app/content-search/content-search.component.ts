@@ -13,7 +13,7 @@ export class ContentSearchComponent implements OnInit{
   foundContent: IContent;
 
   constructor(private streetwearService: StreetwearService) {
-    this.searchId = 0;
+    this.searchId = 1;
     this.foundContent = { id: 0, title: '', author: '', description: '', imgSrc: '', type: '' };
   }
 
