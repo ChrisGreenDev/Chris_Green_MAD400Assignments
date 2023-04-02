@@ -10,6 +10,8 @@ import { ContentItemDetailComponent } from './content-item-detail/content-item-d
 import { AppRoutingModule } from './app-routing.module';
 import { ContentSearchComponent } from './content-search/content-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContentListItemComponent,
     ContentItemDetailComponent,
     ContentSearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TopNavigationComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
+    RouterModule.forRoot([{
+      path: 'content', component: ContentListComponent
+    }]),
     AppRoutingModule
   ],
   providers: [],
