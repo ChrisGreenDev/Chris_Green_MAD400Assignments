@@ -11,7 +11,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { ContentSearchComponent } from './content-search/content-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { HttpClientModule } from '@angular/common/http';
+import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { RouterModule } from '@angular/router';
+import { ContentService } from './services/content.service';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     FormsModule,
     BrowserModule,
+    HttpClientModule,
+    InMemoryWebApiModule.forRoot(ContentService),
     RouterModule.forRoot([{
       path: 'content', component: ContentListComponent
     }]),
