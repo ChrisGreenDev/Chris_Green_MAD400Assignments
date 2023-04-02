@@ -5,12 +5,21 @@ import { ContentListComponent } from './content-list/content-list.component';
 import { ContentItemDetailComponent } from './content-item-detail/content-item-detail.component';
 import { ContentSearchComponent } from './content-search/content-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ModifyContentComponent } from './modify-content/modify-content.component';
 
 
 const routes: Routes = [{
   path: "",
   redirectTo: "content",
   pathMatch: "full"
+},
+{ 
+  path: '', 
+  component: ContentListComponent
+},
+{
+  path: 'addContent', 
+  component: ModifyContentComponent
 },
 {
   path: "content",

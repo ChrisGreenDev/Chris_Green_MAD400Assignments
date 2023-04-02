@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { RouterModule } from '@angular/router';
 import { ContentService } from './services/content.service';
+import { ModifyContentComponent } from './modify-content/modify-content.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContentService } from './services/content.service';
     ContentItemDetailComponent,
     ContentSearchComponent,
     PageNotFoundComponent,
-    TopNavigationComponent
+    TopNavigationComponent,
+    ModifyContentComponent
   ],
   imports: [
     FormsModule,
