@@ -10,6 +10,7 @@ import { ContentItemDetailComponent } from './content-item-detail/content-item-d
 import { AppRoutingModule } from './app-routing.module';
 import { ContentSearchComponent } from './content-search/content-search.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FilterIContentPipe } from './filter-icontent.pipe';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     ContentListItemComponent,
     ContentItemDetailComponent,
     ContentSearchComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    FilterIContentPipe
   ],
   imports: [
     FormsModule,
