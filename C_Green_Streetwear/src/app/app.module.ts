@@ -16,6 +16,8 @@ import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { RouterModule } from '@angular/router';
 import { ContentService } from './services/content.service';
 import { ModifyContentComponent } from './modify-content/modify-content.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ModifyContentComponent } from './modify-content/modify-content.componen
   imports: [
     FormsModule,
     BrowserModule,
+    MatSnackBarModule,
     HttpClientModule,
     InMemoryWebApiModule.forRoot(ContentService),
     RouterModule.forRoot([{
